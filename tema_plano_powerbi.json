@@ -1,0 +1,32 @@
+{
+  "name": "Plano 71 Mil · Navy e Teal",
+  "dataColors": ["#1F9E8E", "#14213D", "#F2A541", "#C0392B", "#7FB7BE", "#5B6475", "#A8D5CE", "#3A4E7A"],
+  "background": "#FFFFFF",
+  "foreground": "#1D2433",
+  "tableAccent": "#1F9E8E",
+  "good": "#1F9E8E",
+  "neutral": "#F2A541",
+  "bad": "#C0392B",
+  "maximum": "#1F9E8E",
+  "center": "#F2A541",
+  "minimum": "#C0392B",
+  "textClasses": {
+    "title": { "fontFace": "Segoe UI Semibold", "fontSize": 12, "color": "#14213D" },
+    "header": { "fontFace": "Segoe UI Semibold", "fontSize": 11, "color": "#14213D" },
+    "label": { "fontFace": "Segoe UI", "fontSize": 10, "color": "#5B6475" },
+    "callout": { "fontFace": "Segoe UI Semibold", "fontSize": 26, "color": "#14213D" }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [{ "show": true, "color": { "solid": { "color": "#FFFFFF" } } }],
+        "border": [{ "show": true, "color": { "solid": { "color": "#E3E6EC" } }, "radius": 8 }]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [{ "color": { "solid": { "color": "#F6F7F9" } }, "transparency": 0 }]
+      }
+    }
+  }
+}

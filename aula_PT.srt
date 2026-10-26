@@ -1,0 +1,113 @@
+1
+00:00:01,000 --> 00:00:07,476
+Olá! Nesta aula rápida, você vai
+conhecer os 8 desperdícios do Lean.
+
+2
+00:00:08,176 --> 00:00:16,176
+Desperdício é tudo o que consome tempo ou
+dinheiro sem agregar valor para o cliente.
+
+3
+00:00:16,876 --> 00:00:22,400
+Vamos ver um por um, com
+exemplos de empresas de serviços.
+
+4
+00:00:23,100 --> 00:00:30,910
+O primeiro é a superprodução: fazer mais
+do que o cliente pediu, ou antes da hora.
+
+5
+00:00:31,610 --> 00:00:36,181
+Por exemplo, imprimir
+relatórios que ninguém lê.
+
+6
+00:00:36,881 --> 00:00:43,262
+O segundo é a espera: pessoas ou
+processos parados aguardando algo.
+
+7
+00:00:43,962 --> 00:00:50,724
+Pense no cliente na fila ou no pedido
+parado à espera de uma aprovação.
+
+8
+00:00:51,424 --> 00:00:58,376
+O terceiro é o transporte: mover
+materiais ou documentos sem necessidade.
+
+9
+00:00:59,076 --> 00:01:06,314
+O quarto é o processamento excessivo:
+fazer mais etapas do que o necessário,
+
+10
+00:01:07,014 --> 00:01:12,633
+como pedir três assinaturas
+para uma compra de baixo valor.
+
+11
+00:01:13,333 --> 00:01:20,190
+O quinto é o estoque: guardar mais
+material ou informação do que se usa.
+
+12
+00:01:20,890 --> 00:01:27,081
+Uma caixa de e-mail com mil
+mensagens não lidas também é estoque.
+
+13
+00:01:27,781 --> 00:01:34,162
+O sexto é a movimentação: deslocamentos
+desnecessários das pessoas,
+
+14
+00:01:34,862 --> 00:01:42,386
+como procurar uma pasta em vários lugares
+ou andar até a impressora o dia todo.
+
+15
+00:01:43,086 --> 00:01:50,514
+O sétimo são os defeitos: erros que geram
+retrabalho, reclamação ou devolução.
+
+16
+00:01:51,214 --> 00:01:56,833
+Um cadastro preenchido errado
+pode custar horas mais tarde.
+
+17
+00:01:57,533 --> 00:02:01,248
+E o oitavo é o talento não aproveitado:
+
+18
+00:02:01,948 --> 00:02:08,995
+quando a empresa não escuta as ideias
+de quem faz o trabalho no dia a dia.
+
+19
+00:02:09,695 --> 00:02:15,886
+Uma dica para lembrar dos oito:
+escolha um processo da sua rotina
+
+20
+00:02:16,586 --> 00:02:22,871
+e anote quantas vezes cada desperdício
+aparece durante uma semana.
+
+21
+00:02:23,571 --> 00:02:30,524
+Depois, ataque primeiro o que aparece
+mais. Isso é o princípio de Pareto.
+
+22
+00:02:31,224 --> 00:02:38,748
+Na próxima aula, vamos usar uma planilha
+simples para medir esses desperdícios.
+
+23
+00:02:39,448 --> 00:02:41,248
+Até lá!
+

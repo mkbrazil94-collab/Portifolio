@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Portfólio · Lean Six Sigma e dados</title>
+<link rel="icon" href="img-avatar.png">
+<style>
+:root{--navy:#14213D;--teal:#1F9E8E;--bg:#F6F7F9;--card:#fff;--ink:#1d2433;--mute:#5b6475;--line:#e3e6ec}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1524;--card:#18203a;--ink:#e8ecf3;--mute:#a3acbd;--line:#2a3352}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--teal)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+header{background:var(--navy);color:#fff;padding:48px 0 40px}
+.top{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+.top img{width:96px;height:96px;border-radius:50%;border:3px solid var(--teal)}
+h1{margin:0;font-size:clamp(26px,4vw,38px);line-height:1.2}
+.sub{margin:6px 0 0;color:#c9d2e3;max-width:640px}
+.lang{margin-left:auto;display:flex;gap:6px}
+.lang button{background:transparent;color:#fff;border:1px solid #ffffff55;border-radius:6px;padding:6px 12px;cursor:pointer;font:inherit;font-size:14px}
+.lang button[aria-pressed=true]{background:var(--teal);border-color:var(--teal)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.tags span{background:#ffffff14;border:1px solid #ffffff2a;border-radius:99px;padding:3px 12px;font-size:14px}
+h2{font-size:24px;margin:44px 0 16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.card img{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:top;border-bottom:1px solid var(--line);background:#fff}
+.ph{aspect-ratio:16/9;display:grid;place-items:center;background:linear-gradient(135deg,var(--navy),var(--teal));color:#fff;font-size:30px;font-weight:700;letter-spacing:2px}
+.body{padding:18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.body h3{margin:0;font-size:18px}
+.body p{margin:0;color:var(--mute);font-size:15px}
+.kpi{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0}
+.kpi b{background:color-mix(in srgb,var(--teal) 14%,transparent);color:var(--teal);border-radius:6px;padding:2px 8px;font-size:13px}
+.links{margin-top:auto;display:flex;flex-wrap:wrap;gap:12px;padding-top:8px;font-size:14px;font-weight:600}
+.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.svc div{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--teal);border-radius:8px;padding:14px 16px}
+.svc strong{display:block}
+.svc span{color:var(--mute);font-size:14px}
+.contact{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:8px}
+.contact a{background:var(--navy);color:#fff;text-decoration:none;border-radius:8px;padding:10px 18px;font-weight:600}
+@media (prefers-color-scheme:dark){.contact a{background:var(--teal)}}
+footer{color:var(--mute);font-size:13px;padding:40px 0 32px}
+html:not([lang=pt-BR]) [data-l=pt],html:not([lang=en]) [data-l=en]{display:none!important}
+[hidden]{display:none!important}
+.back{display:inline-block;margin:18px 0 0;color:#c9d2e3;text-decoration:none;font-size:14px}
+.files{display:grid;gap:10px;margin:8px 0 0}
+.file{display:flex;justify-content:space-between;gap:12px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;flex-wrap:wrap}
+.file span{color:var(--mute);font-size:14px}
+.file a{font-weight:700;text-decoration:none}
+.hero-img{width:100%;border:1px solid var(--line);border-radius:12px;background:#fff;margin-top:8px}
+.prose p,.prose li{max-width:760px}
+table.t{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+.t th,.t td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.t th{background:color-mix(in srgb,var(--teal) 12%,transparent)}
+.tw{overflow-x:auto}
+</style>
+
+</head>
+<body>
+
+<header>
+ <div class="wrap">
+  <div class="top">
+   <img src="img-avatar.png" alt="">
+   <div>
+    <h1>Pedro · <span data-l="pt">Lean Six Sigma, dados e tradução técnica</span><span data-l="en">Lean Six Sigma, data and technical translation</span></h1>
+    <p class="sub" data-l="pt">Engenheiro de Produção e Black Belt. Transformo dados de processo em decisões: cases DMAIC, dashboards em Excel e Power BI e tradução técnica entre português, inglês e espanhol.</p>
+    <p class="sub" data-l="en">Production Engineer and Lean Six Sigma Black Belt. I turn process data into decisions: DMAIC cases, Excel and Power BI dashboards, and technical translation across Portuguese, English and Spanish.</p>
+   </div>
+   <div class="lang"><button id="bPt" aria-pressed="true">PT</button><button id="bEn" aria-pressed="false">EN</button></div>
+  </div>
+  <div class="tags"><span>Black Belt LSS</span><span>Minitab</span><span>Excel · Power BI</span><span>Power Automate · Python · SQL</span><span>BPMN</span><span>Cambridge FCE</span><span data-l="pt">Espanhol avançado</span><span data-l="en">Advanced Spanish</span></div>
+ </div>
+</header>
+
+<main class="wrap">
+ <h2 data-l="pt">Projetos</h2><h2 data-l="en">Projects</h2>
+ <div class="grid">
+  <article class="card">
+   <img src="img-a3.png" alt="A3 report">
+   <div class="body">
+    <h3 data-l="pt">Case DMAIC: refugo na estamparia</h3><h3 data-l="en">DMAIC case: stamping scrap</h3>
+    <p data-l="pt">Charter, SIPOC, capabilidade e Pareto no Minitab, causa raiz e plano de controle, tudo resumido em um A3.</p>
+    <p data-l="en">Charter, SIPOC, Minitab capability and Pareto, root cause and control plan, summarised in one A3.</p>
+    <div class="kpi"><b>4,8% → 1,4%</b><b>Cpk 0,71 → 1,41</b><b>R$ 156 mil/ano</b></div>
+    <div class="links"><a href="dmaic.html" data-l="pt">Ver case</a><a href="dmaic.html" data-l="en">See case</a><a href="A3_Case_DMAIC.pdf">A3 (PDF)</a><a href="charter-sipoc.html">Charter · SIPOC</a><a href="Dados_Case_DMAIC_Minitab.xlsx" data-l="pt">Dados</a><a href="Dados_Case_DMAIC_Minitab.xlsx" data-l="en">Data</a></div>
+   </div>
+  </article>
+  <article class="card">
+   <img src="img-oee.png" alt="Dashboard OEE">
+   <div class="body">
+    <h3 data-l="pt">Dashboard OEE em Excel</h3><h3 data-l="en">Excel OEE dashboard</h3>
+    <p data-l="pt">3 linhas, 3 turnos e 90 dias. OEE agregado, filtros de linha e mês, tendência semanal e Pareto de paradas.</p>
+    <p data-l="en">3 lines, 3 shifts, 90 days. Aggregated OEE, line and month filters, weekly trend and downtime Pareto.</p>
+    <div class="kpi"><b>OEE 70,6%</b><b data-l="pt">Setup = 35% das paradas</b><b data-l="en">Setup = 35% of downtime</b></div>
+    <div class="links"><a href="Dashboard_OEE_Producao.xlsx" data-l="pt">Baixar o Excel</a><a href="Dashboard_OEE_Producao.xlsx" data-l="en">Download Excel</a><a href="oee.html" data-l="pt">Detalhes</a><a href="oee.html" data-l="en">Details</a></div>
+   </div>
+  </article>
+  <article class="card">
+   <div class="ph">PT · EN · ES</div>
+   <div class="body">
+    <h3 data-l="pt">Tradução técnica</h3><h3 data-l="en">Technical translation</h3>
+    <p data-l="pt">Procedimento de segurança PT→EN, manual de manutenção EN→ES e legendas .srt de uma aula em EN e ES.</p>
+    <p data-l="en">Safety procedure PT→EN, maintenance manual EN→ES and .srt subtitles for a lesson in EN and ES.</p>
+    <div class="kpi"><b data-l="pt">Segurança</b><b data-l="en">Safety</b><b data-l="pt">Manutenção</b><b data-l="en">Maintenance</b><b data-l="pt">Legendagem</b><b data-l="en">Subtitling</b></div>
+    <div class="links"><a href="traducao.html" data-l="pt">Ver amostras</a><a href="traducao.html" data-l="en">See samples</a></div>
+   </div>
+  </article>
+  <article class="card">
+   <div class="ph">POWER BI</div>
+   <div class="body">
+    <h3 data-l="pt">Relatório Power BI: central de atendimento</h3><h3 data-l="en">Power BI report: service desk</h3>
+    <p data-l="pt">7.257 chamados em 12 meses. SLA calculado em DAX por prioridade, variação mês a mês e diagnóstico por canal, analista e horário.</p>
+    <p data-l="en">7,257 tickets over 12 months. SLA compliance in DAX by priority, month-over-month change and breakdown by channel, agent and hour.</p>
+    <div class="kpi"><b>SLA 77,6% → 88,8%</b><b>DAX</b><b data-l="pt">Modelo em estrela</b><b data-l="en">Star schema</b></div>
+    <div class="links"><a href="powerbi.html" data-l="pt">Ver relatório</a><a href="powerbi.html" data-l="en">See report</a><a href="Base_Atendimentos_PowerBI.xlsx" data-l="pt">Base</a><a href="Base_Atendimentos_PowerBI.xlsx" data-l="en">Data</a></div>
+   </div>
+  </article>
+ </div>
+
+ <h2 data-l="pt">Serviços</h2><h2 data-l="en">Services</h2>
+ <div class="svc">
+  <div><strong data-l="pt">Dashboards</strong><strong data-l="en">Dashboards</strong><span data-l="pt">Excel e Power BI com indicadores de produção, vendas ou atendimento.</span><span data-l="en">Excel and Power BI for production, sales or service KPIs.</span></div>
+  <div><strong data-l="pt">Automação</strong><strong data-l="en">Automation</strong><span data-l="pt">Power Automate, Python e SQL para tirar o trabalho manual de planilhas e relatórios.</span><span data-l="en">Power Automate, Python and SQL to remove manual spreadsheet and report work.</span></div>
+  <div><strong data-l="pt">Melhoria de processos</strong><strong data-l="en">Process improvement</strong><span data-l="pt">Mapeamento BPMN, análises no Minitab, DMAIC e A3.</span><span data-l="en">BPMN mapping, Minitab analysis, DMAIC and A3.</span></div>
+  <div><strong data-l="pt">Tradução e legendas</strong><strong data-l="en">Translation and subtitles</strong><span data-l="pt">Textos técnicos e aulas entre PT, EN e ES.</span><span data-l="en">Technical texts and lessons across PT, EN and ES.</span></div>
+ </div>
+
+ <h2 data-l="pt">Contato</h2><h2 data-l="en">Contact</h2>
+ <!-- Troque cada # pelo link do perfil. Apague a linha de quem ainda não tiver perfil. -->
+ <div class="contact">
+  <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+  <a href="#" target="_blank" rel="noopener">99Freelas</a>
+  <a href="#" target="_blank" rel="noopener">Fiverr</a>
+  <a href="#" target="_blank" rel="noopener">ProZ</a>
+ </div>
+</main>
+
+<footer class="wrap">
+ <span data-l="pt">Todos os cases usam empresas e dados fictícios.</span><span data-l="en">All cases use fictitious companies and data.</span>
+</footer>
+
+
+<script>
+(function(){
+  var h=document.documentElement,bPt=document.getElementById('bPt'),bEn=document.getElementById('bEn');
+  function set(l){h.lang=l;if(bPt){bPt.setAttribute('aria-pressed',l==='pt-BR');bEn.setAttribute('aria-pressed',l==='en');}try{localStorage.setItem('lang',l)}catch(e){}}
+  if(bPt){bPt.onclick=function(){set('pt-BR')};bEn.onclick=function(){set('en')};}
+  var s=null;try{s=localStorage.getItem('lang')}catch(e){}
+  set(s||((navigator.language||'').toLowerCase().indexOf('pt')===0?'pt-BR':'en'));
+  // botões de contato ainda sem link ficam escondidos
+  document.querySelectorAll('.contact a').forEach(function(a){ if(a.getAttribute('href')==='#') a.hidden=true; });
+  var cs=document.querySelector('.contact'); if(cs && !cs.querySelector('a:not([hidden])')){ cs.hidden=true; var h=cs.previousElementSibling; while(h && h.tagName==='H2'){ h.hidden=true; h=h.previousElementSibling; } }
+  // arquivos opcionais: só aparecem depois de enviados ao repositório
+  document.querySelectorAll('[data-opt]').forEach(function(el){
+    var url=el.getAttribute('data-opt');
+    fetch(url,{method:'HEAD'}).then(function(r){ if(r.ok) el.hidden=false; }).catch(function(){});
+  });
+})();
+</script>
+</body>
+</html>

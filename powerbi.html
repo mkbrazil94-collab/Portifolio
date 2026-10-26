@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Relatório Power BI · Portfólio</title>
+<link rel="icon" href="img-avatar.png">
+<style>
+:root{--navy:#14213D;--teal:#1F9E8E;--bg:#F6F7F9;--card:#fff;--ink:#1d2433;--mute:#5b6475;--line:#e3e6ec}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1524;--card:#18203a;--ink:#e8ecf3;--mute:#a3acbd;--line:#2a3352}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--teal)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+header{background:var(--navy);color:#fff;padding:48px 0 40px}
+.top{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+.top img{width:96px;height:96px;border-radius:50%;border:3px solid var(--teal)}
+h1{margin:0;font-size:clamp(26px,4vw,38px);line-height:1.2}
+.sub{margin:6px 0 0;color:#c9d2e3;max-width:640px}
+.lang{margin-left:auto;display:flex;gap:6px}
+.lang button{background:transparent;color:#fff;border:1px solid #ffffff55;border-radius:6px;padding:6px 12px;cursor:pointer;font:inherit;font-size:14px}
+.lang button[aria-pressed=true]{background:var(--teal);border-color:var(--teal)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.tags span{background:#ffffff14;border:1px solid #ffffff2a;border-radius:99px;padding:3px 12px;font-size:14px}
+h2{font-size:24px;margin:44px 0 16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.card img{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:top;border-bottom:1px solid var(--line);background:#fff}
+.ph{aspect-ratio:16/9;display:grid;place-items:center;background:linear-gradient(135deg,var(--navy),var(--teal));color:#fff;font-size:30px;font-weight:700;letter-spacing:2px}
+.body{padding:18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.body h3{margin:0;font-size:18px}
+.body p{margin:0;color:var(--mute);font-size:15px}
+.kpi{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0}
+.kpi b{background:color-mix(in srgb,var(--teal) 14%,transparent);color:var(--teal);border-radius:6px;padding:2px 8px;font-size:13px}
+.links{margin-top:auto;display:flex;flex-wrap:wrap;gap:12px;padding-top:8px;font-size:14px;font-weight:600}
+.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.svc div{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--teal);border-radius:8px;padding:14px 16px}
+.svc strong{display:block}
+.svc span{color:var(--mute);font-size:14px}
+.contact{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:8px}
+.contact a{background:var(--navy);color:#fff;text-decoration:none;border-radius:8px;padding:10px 18px;font-weight:600}
+@media (prefers-color-scheme:dark){.contact a{background:var(--teal)}}
+footer{color:var(--mute);font-size:13px;padding:40px 0 32px}
+html:not([lang=pt-BR]) [data-l=pt],html:not([lang=en]) [data-l=en]{display:none!important}
+[hidden]{display:none!important}
+.back{display:inline-block;margin:18px 0 0;color:#c9d2e3;text-decoration:none;font-size:14px}
+.files{display:grid;gap:10px;margin:8px 0 0}
+.file{display:flex;justify-content:space-between;gap:12px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;flex-wrap:wrap}
+.file span{color:var(--mute);font-size:14px}
+.file a{font-weight:700;text-decoration:none}
+.hero-img{width:100%;border:1px solid var(--line);border-radius:12px;background:#fff;margin-top:8px}
+.prose p,.prose li{max-width:760px}
+table.t{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+.t th,.t td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.t th{background:color-mix(in srgb,var(--teal) 12%,transparent)}
+.tw{overflow-x:auto}
+</style>
+
+</head>
+<body>
+<header><div class="wrap">
+  <div class="top">
+   <img src="img-avatar.png" alt="">
+   <div><h1><span data-l="pt">Relatório Power BI: central de atendimento</span><span data-l="en">Power BI report: service desk</span></h1>
+   <p class="sub" data-l="pt">Atende+ Serviços (fictícia) · 7.257 chamados de out/2025 a set/2026</p><p class="sub" data-l="en">Fictitious service desk · 7,257 tickets, Oct 2025 to Sep 2026</p></div>
+   <div class="lang"><button id="bPt" aria-pressed="true">PT</button><button id="bEn" aria-pressed="false">EN</button></div>
+  </div>
+  <a class="back" href="index.html"><span data-l="pt">← Voltar ao portfólio</span><span data-l="en">← Back to portfolio</span></a>
+ </div></header><main class="wrap prose">
+<div class="kpi" style="margin-top:28px"><b>SLA 77,6% → 88,8%</b><b>DAX</b><b data-l="pt">Modelo em estrela</b><b data-l="en">Star schema</b></div>
+<ul><li data-l="pt">SLA calculado em DAX por prioridade (4, 24 e 72 h), tempo médio de resolução e de 1ª resposta, CSAT e variação mês a mês</li><li data-l="en">SLA compliance in DAX by priority (4, 24, 72 h), resolution and first-response times, CSAT and month-over-month change</li>
+<li data-l="pt">Página 1: visão geral. Página 2: SLA por categoria e prioridade, tempo por canal, desempenho por analista e mapa de calor por dia e hora</li><li data-l="en">Page 1: overview. Page 2: SLA by category and priority, time by channel, agent performance and a day × hour heatmap</li></ul>
+<img class="hero-img" data-opt="pagina1.png" src="pagina1.png" alt="" hidden>
+<h2 data-l="pt">Arquivos</h2><h2 data-l="en">Files</h2><div class="files"><div class="file" data-opt="Relatorio_Atendimento.pdf" hidden><div><b>Relatorio_Atendimento.pdf</b><br><span data-l="pt">As 2 páginas em PDF</span><span data-l="en">Both pages as PDF</span></div><a href="Relatorio_Atendimento.pdf" download><span data-l="pt">Baixar</span><span data-l="en">Download</span></a></div><div class="file" data-opt="Relatorio_Atendimento.pbix" hidden><div><b>Relatorio_Atendimento.pbix</b><br><span data-l="pt">O relatório (Power BI Desktop)</span><span data-l="en">The report (Power BI Desktop)</span></div><a href="Relatorio_Atendimento.pbix" download><span data-l="pt">Baixar</span><span data-l="en">Download</span></a></div><div class="file" data-opt="pagina1.png" hidden><div><b>pagina1.png</b><br><span data-l="pt">Print da página 1</span><span data-l="en">Page 1 screenshot</span></div><a href="pagina1.png" download><span data-l="pt">Baixar</span><span data-l="en">Download</span></a></div><div class="file" data-opt="pagina2.png" hidden><div><b>pagina2.png</b><br><span data-l="pt">Print da página 2</span><span data-l="en">Page 2 screenshot</span></div><a href="pagina2.png" download><span data-l="pt">Baixar</span><span data-l="en">Download</span></a></div><div class="file"><div><b>Base_Atendimentos_PowerBI.xlsx</b><br><span data-l="pt">Base fictícia usada</span><span data-l="en">Fictitious dataset</span></div><a href="Base_Atendimentos_PowerBI.xlsx" download><span data-l="pt">Baixar</span><span data-l="en">Download</span></a></div><div class="file"><div><b>tema_plano_powerbi.json</b><br><span data-l="pt">Tema de cores</span><span data-l="en">Colour theme</span></div><a href="tema_plano_powerbi.json" download><span data-l="pt">Baixar</span><span data-l="en">Download</span></a></div></div></main><footer class="wrap"><span data-l="pt">Todos os cases usam empresas e dados fictícios.</span><span data-l="en">All cases use fictitious companies and data.</span></footer>
+<script>
+(function(){
+  var h=document.documentElement,bPt=document.getElementById('bPt'),bEn=document.getElementById('bEn');
+  function set(l){h.lang=l;if(bPt){bPt.setAttribute('aria-pressed',l==='pt-BR');bEn.setAttribute('aria-pressed',l==='en');}try{localStorage.setItem('lang',l)}catch(e){}}
+  if(bPt){bPt.onclick=function(){set('pt-BR')};bEn.onclick=function(){set('en')};}
+  var s=null;try{s=localStorage.getItem('lang')}catch(e){}
+  set(s||((navigator.language||'').toLowerCase().indexOf('pt')===0?'pt-BR':'en'));
+  // botões de contato ainda sem link ficam escondidos
+  document.querySelectorAll('.contact a').forEach(function(a){ if(a.getAttribute('href')==='#') a.hidden=true; });
+  var cs=document.querySelector('.contact'); if(cs && !cs.querySelector('a:not([hidden])')){ cs.hidden=true; var h=cs.previousElementSibling; while(h && h.tagName==='H2'){ h.hidden=true; h=h.previousElementSibling; } }
+  // arquivos opcionais: só aparecem depois de enviados ao repositório
+  document.querySelectorAll('[data-opt]').forEach(function(el){
+    var url=el.getAttribute('data-opt');
+    fetch(url,{method:'HEAD'}).then(function(r){ if(r.ok) el.hidden=false; }).catch(function(){});
+  });
+})();
+</script>
+</body>
+</html>

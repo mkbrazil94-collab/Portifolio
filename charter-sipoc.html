@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Charter e SIPOC · Portfólio</title>
+<link rel="icon" href="img-avatar.png">
+<style>
+:root{--navy:#14213D;--teal:#1F9E8E;--bg:#F6F7F9;--card:#fff;--ink:#1d2433;--mute:#5b6475;--line:#e3e6ec}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1524;--card:#18203a;--ink:#e8ecf3;--mute:#a3acbd;--line:#2a3352}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--teal)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+header{background:var(--navy);color:#fff;padding:48px 0 40px}
+.top{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+.top img{width:96px;height:96px;border-radius:50%;border:3px solid var(--teal)}
+h1{margin:0;font-size:clamp(26px,4vw,38px);line-height:1.2}
+.sub{margin:6px 0 0;color:#c9d2e3;max-width:640px}
+.lang{margin-left:auto;display:flex;gap:6px}
+.lang button{background:transparent;color:#fff;border:1px solid #ffffff55;border-radius:6px;padding:6px 12px;cursor:pointer;font:inherit;font-size:14px}
+.lang button[aria-pressed=true]{background:var(--teal);border-color:var(--teal)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.tags span{background:#ffffff14;border:1px solid #ffffff2a;border-radius:99px;padding:3px 12px;font-size:14px}
+h2{font-size:24px;margin:44px 0 16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.card img{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:top;border-bottom:1px solid var(--line);background:#fff}
+.ph{aspect-ratio:16/9;display:grid;place-items:center;background:linear-gradient(135deg,var(--navy),var(--teal));color:#fff;font-size:30px;font-weight:700;letter-spacing:2px}
+.body{padding:18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.body h3{margin:0;font-size:18px}
+.body p{margin:0;color:var(--mute);font-size:15px}
+.kpi{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0}
+.kpi b{background:color-mix(in srgb,var(--teal) 14%,transparent);color:var(--teal);border-radius:6px;padding:2px 8px;font-size:13px}
+.links{margin-top:auto;display:flex;flex-wrap:wrap;gap:12px;padding-top:8px;font-size:14px;font-weight:600}
+.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.svc div{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--teal);border-radius:8px;padding:14px 16px}
+.svc strong{display:block}
+.svc span{color:var(--mute);font-size:14px}
+.contact{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:8px}
+.contact a{background:var(--navy);color:#fff;text-decoration:none;border-radius:8px;padding:10px 18px;font-weight:600}
+@media (prefers-color-scheme:dark){.contact a{background:var(--teal)}}
+footer{color:var(--mute);font-size:13px;padding:40px 0 32px}
+html:not([lang=pt-BR]) [data-l=pt],html:not([lang=en]) [data-l=en]{display:none!important}
+[hidden]{display:none!important}
+.back{display:inline-block;margin:18px 0 0;color:#c9d2e3;text-decoration:none;font-size:14px}
+.files{display:grid;gap:10px;margin:8px 0 0}
+.file{display:flex;justify-content:space-between;gap:12px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;flex-wrap:wrap}
+.file span{color:var(--mute);font-size:14px}
+.file a{font-weight:700;text-decoration:none}
+.hero-img{width:100%;border:1px solid var(--line);border-radius:12px;background:#fff;margin-top:8px}
+.prose p,.prose li{max-width:760px}
+table.t{border-collapse:collapse;width:100%;background:var(--card);font-size:14px}
+.t th,.t td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.t th{background:color-mix(in srgb,var(--teal) 12%,transparent)}
+.tw{overflow-x:auto}
+</style>
+
+</head>
+<body>
+<header><div class="wrap">
+  <div class="top">
+   <img src="img-avatar.png" alt="">
+   <div><h1><span data-l="pt">Project charter e SIPOC</span><span data-l="en">Project charter and SIPOC</span></h1>
+   <p class="sub" data-l="pt">Case DMAIC · fase Definir</p><p class="sub" data-l="en">DMAIC case · Define phase</p></div>
+   <div class="lang"><button id="bPt" aria-pressed="true">PT</button><button id="bEn" aria-pressed="false">EN</button></div>
+  </div>
+  <a class="back" href="dmaic.html"><span data-l="pt">← Voltar ao case</span><span data-l="en">← Back to the case</span></a>
+ </div></header><main class="wrap prose">
+<h2>Project charter</h2>
+<div class="tw"><table class="t">
+<thead>
+<tr>
+<th>Campo</th>
+<th>Conteúdo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Título</td>
+<td>Redução de refugo por rebarba no suporte S-210 (prensa P-04)</td>
+</tr>
+<tr>
+<td>Empresa</td>
+<td>Metalúrgica Vale Azul Ltda. (fictícia), estamparia, linha de autopeças</td>
+</tr>
+<tr>
+<td>Business case</td>
+<td>O S-210 é o item de maior volume da linha: 120.000 peças por mês para um cliente automotivo. O refugo gera custo de material e horas extras, e o cliente abriu 3 reclamações de rebarba no último trimestre.</td>
+</tr>
+<tr>
+<td>Problema</td>
+<td>De janeiro a junho, o refugo do S-210 foi de 4,8% (média de 5.760 peças por mês), contra 1,5% do padrão da empresa. A rebarba acima de 0,15 mm responde pela maior parte.</td>
+</tr>
+<tr>
+<td>Meta (SMART)</td>
+<td>Reduzir o refugo de 4,8% para 1,5% até o fim do 6º mês, sem aumentar o tempo de ciclo da prensa.</td>
+</tr>
+<tr>
+<td>Escopo: dentro</td>
+<td>Prensa P-04, ferramenta de corte do S-210, setup, manutenção da ferramenta, inspeção na saída, 3 turnos</td>
+</tr>
+<tr>
+<td>Escopo: fora</td>
+<td>Outras prensas e peças, compra de prensa, troca de fornecedor de bobina, pintura e expedição</td>
+</tr>
+<tr>
+<td>CTQ</td>
+<td>Altura da rebarba ≤ 0,15 mm</td>
+</tr>
+<tr>
+<td>Y primário</td>
+<td>% de refugo do S-210 por semana</td>
+</tr>
+<tr>
+<td>Ys secundários</td>
+<td>Cpk da rebarba (base 0,71; alvo ≥ 1,33) · reclamações por trimestre (alvo zero) · tempo de ciclo (não pode piorar)</td>
+</tr>
+<tr>
+<td>Ganho estimado</td>
+<td>3.960 peças a menos por mês × 12 × R$ 3,20 = R$ 152.064 por ano</td>
+</tr>
+<tr>
+<td>Equipe</td>
+<td>Patrocinador: gerente industrial · Black Belt: líder do projeto · Dono do processo: supervisor da estamparia · Ferramenteiro, técnico de manutenção, inspetor de qualidade, operadores líderes</td>
+</tr>
+<tr>
+<td>Fases</td>
+<td>Definir: mês 1 · Medir: mês 2 · Analisar: mês 3 · Melhorar: meses 4 e 5 · Controlar: mês 6 + 3 meses de acompanhamento</td>
+</tr>
+<tr>
+<td>Riscos</td>
+<td>Paradas para testes atrasarem pedidos (testes no setup programado) · sistema de medição sem repetibilidade (estudo R&amp;R na fase Medir)</td>
+</tr>
+</tbody>
+</table></div>
+<h2>SIPOC</h2>
+<p>Início: bobina liberada pelo almoxarifado · Fim: palete aprovado na doca de expedição</p>
+<div class="tw"><table class="t">
+<thead>
+<tr>
+<th>Fornecedores</th>
+<th>Entradas</th>
+<th>Processo</th>
+<th>Saídas</th>
+<th>Clientes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Almoxarifado, usina de aço</td>
+<td>Bobina SAE 1010, certificado do lote</td>
+<td>1. Abastecer a prensa</td>
+<td>Bobina montada</td>
+<td>Operador</td>
+</tr>
+<tr>
+<td>Ferramentaria</td>
+<td>Ferramenta de corte, folha de setup</td>
+<td>2. Fazer o setup</td>
+<td>Ferramenta ajustada, 1ª peça</td>
+<td>Inspetor de qualidade</td>
+</tr>
+<tr>
+<td>Qualidade</td>
+<td>Desenho, calibrador de rebarba</td>
+<td>3. Aprovar a 1ª peça</td>
+<td>Laudo de 1ª peça</td>
+<td>Supervisor</td>
+</tr>
+<tr>
+<td>Manutenção, PCP</td>
+<td>Prensa em condição, ordem de produção</td>
+<td>4. Estampar o lote</td>
+<td>Peças estampadas</td>
+<td>Inspeção</td>
+</tr>
+<tr>
+<td>Qualidade</td>
+<td>Plano de inspeção, ficha de controle</td>
+<td>5. Inspecionar por amostragem</td>
+<td>Peças aprovadas e refugadas, registro de refugo</td>
+<td>Expedição, sucata</td>
+</tr>
+<tr>
+<td>Logística interna</td>
+<td>Paletes, etiquetas</td>
+<td>6. Embalar e identificar</td>
+<td>Palete identificado</td>
+<td>Cliente automotivo</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Case ilustrativo, dados fictícios.</em></p></main><footer class="wrap"><span data-l="pt">Todos os cases usam empresas e dados fictícios.</span><span data-l="en">All cases use fictitious companies and data.</span></footer>
+<script>
+(function(){
+  var h=document.documentElement,bPt=document.getElementById('bPt'),bEn=document.getElementById('bEn');
+  function set(l){h.lang=l;if(bPt){bPt.setAttribute('aria-pressed',l==='pt-BR');bEn.setAttribute('aria-pressed',l==='en');}try{localStorage.setItem('lang',l)}catch(e){}}
+  if(bPt){bPt.onclick=function(){set('pt-BR')};bEn.onclick=function(){set('en')};}
+  var s=null;try{s=localStorage.getItem('lang')}catch(e){}
+  set(s||((navigator.language||'').toLowerCase().indexOf('pt')===0?'pt-BR':'en'));
+  // botões de contato ainda sem link ficam escondidos
+  document.querySelectorAll('.contact a').forEach(function(a){ if(a.getAttribute('href')==='#') a.hidden=true; });
+  var cs=document.querySelector('.contact'); if(cs && !cs.querySelector('a:not([hidden])')){ cs.hidden=true; var h=cs.previousElementSibling; while(h && h.tagName==='H2'){ h.hidden=true; h=h.previousElementSibling; } }
+  // arquivos opcionais: só aparecem depois de enviados ao repositório
+  document.querySelectorAll('[data-opt]').forEach(function(el){
+    var url=el.getAttribute('data-opt');
+    fetch(url,{method:'HEAD'}).then(function(r){ if(r.ok) el.hidden=false; }).catch(function(){});
+  });
+})();
+</script>
+</body>
+</html>
